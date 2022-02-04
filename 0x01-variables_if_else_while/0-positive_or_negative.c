@@ -5,8 +5,9 @@
 /**
  * main - Indicates if a random number is positive or negative
  *
- * Description: Generates a random number and indicates if it's positive or negative
- * 
+ * Description: Generates a random number.
+ *   indicates if it's positive or negative
+ *
  * Return: 0
  */
 
@@ -18,7 +19,7 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 
 	if (n == 0)
-		printf("is zero\n");
+		printf("%d is zero\n", n);
 	else if (n < 0)
 		printf("%d is negative\n", n);
 	else
