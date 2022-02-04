@@ -9,8 +9,8 @@
  */
 int main(void)
 {
-	char str1[35] = "and that piece of art is useful\" ";
-	char str2[28] = "- Dora Korpar, 2015-10-19\n";
-	fprintf(stderr, "%s%s", str1, str2);
+	char quote[60] = "and that piece of art is useful\" \
+- Dora Korpar, 2015-10-19";
+	fprintf(stderr, "%s\n", quote);
 	return (1);
 }
