@@ -3,10 +3,10 @@
 #include <stdio.h>
 
 /**
- * main - Indicates if a random number is positive or negative
+ * main - Indicates if the last digit of a random number is positive or negative
  *
- * Description: Generates a random number and indicates
- * if it's positive or negative
+ * Description: Indicates if the last digit of a random number.
+ * Is positive or negative
  *
  * Return: 0
  */
