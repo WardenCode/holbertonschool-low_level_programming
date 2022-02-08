@@ -1,6 +1,6 @@
 #ifndef _PUTCH
 #define _PUTCH
 
-#include "_putchar.c"
+int _putchar(char c);
 
 #endif
