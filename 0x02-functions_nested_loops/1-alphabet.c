@@ -17,15 +17,3 @@ void print_alphabet(void)
 	}
 		_putchar(10);
 }
-
-/**
- * main - Entry point
- *
- * Return: Always return 0
- */
-
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
