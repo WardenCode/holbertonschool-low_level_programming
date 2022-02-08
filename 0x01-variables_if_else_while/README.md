@@ -17,30 +17,30 @@ Exist two types of tasks in this project:
 
 ### Mandatory
 
- &rarr; 
+- 0-positive\_or_negative.c &rarr; Generates a random number and indicates if it's positive or negative.
 
- &rarr; 
+- 1-last_digit.c &rarr; Indicates if the last digit of a random number is positive or negative.
 
- &rarr; 
+- 2-print_alphabet.c &rarr; Prints the alphabet in lowercase.
 
- &rarr; 
+- 3-print_alphabets.c &rarr; Prints the alphabet in lowercase, and then in uppercase.
 
- &rarr; 
+- 4-print_alphabt.c &rarr; Prints the alphabet in lowercase expect the letters "q" and "e".
 
- &rarr; 
+- 5-print_numbers.c &rarr; Prints all single digit numbers of base 10 starting from 0.
 
- &rarr; 
+- 6-print_numberz.c &rarr; Prints all single digit numbers of base 10 starting from 0 (using putchar).
 
- &rarr; 
- 
- &rarr;
-  
- &rarr;
+- 7-print_tebahpla.c &rarr; Prints the lowercase alphabet in reverse.
+
+- 8-print_base16.c &rarr; Prints all the numbers of base 16 in lowercase.
+
+- 9-print_comb.c &rarr; Prints all possible combinations of single-digit numbers.
 
 ### Advanced
 
- &rarr; 
+- 100-print_comb3.c &rarr; Prints all possible different combinations of two digits.
 
- &rarr; 
- 
- &rarr; 
+- 101-print_comb4.c &rarr; Prints all possible different combinations of three digits.
+
+- 102-print_comb5.c &rarr; Prints all possible combinations of two two-digit numbers. (not done yet)
