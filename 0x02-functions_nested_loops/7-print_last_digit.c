@@ -1,18 +1,17 @@
 #include "main.h"
-
 /**
- * _abs - Print the last digit of a number
+ * print_last_digit - Print the last digit of a number
  *
  * @n: Number recevied
  *
  * Return: return the last digit of a number
  */
 
-int _abs(int n)
+int print_last_digit(int n)
 {
-	int result;
+	int last_digit;
 
-	result = n % 10;
+	last_digit = n % 10;
 
-	return result;
+	return (last_digit);
 }
