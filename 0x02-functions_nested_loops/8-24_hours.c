@@ -11,9 +11,9 @@ void jack_bauer(void)
 {
 	int h, m, first_digit, last_digit;
 
-	for(h = 0; h < 24; h++)
+	for (h = 0; h < 24; h++)
 	{
-		for(m = 0; m < 60; m++)
+		for (m = 0; m < 60; m++)
 		{
 			last_digit = h % 10;
 			first_digit = h / 10;
