@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_to_98 - Print the last digit of a number
+ * print_to_98 - Prints all natural numbers from n to 98
  *
- * @num: number
+ * @num: delimiter (decides if the iterator add or substract)
  *
  * Return: void
  */

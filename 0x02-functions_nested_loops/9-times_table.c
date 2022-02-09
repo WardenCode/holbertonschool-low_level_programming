@@ -2,8 +2,7 @@
 #include <stdio.h>
 
 /**
- * times_table - Print the last digit of a number
- *
+ * times_table - Prints the 9 times table, starting with 0.
  *
  * Return: void
  */
