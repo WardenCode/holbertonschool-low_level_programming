@@ -12,14 +12,14 @@ void print_to_98(int num)
 {
 	int i;
 
-	if (98 < num)
+	if (num > 98)
 	{
 		for (i = num; i > 98; i--)
 		{
 			printf("%d, ", i);
 		}
 	}
-	else if (98 > num)
+	else if (num < 98)
 	{
 		for (i = num; i < 98; i++)
 		{
@@ -27,7 +27,7 @@ void print_to_98(int num)
 		}
 	}
 
-	if (98 == i)
+	if (i == 98 || num == 98)
 	{
 		printf("%d", 98);
 	}
