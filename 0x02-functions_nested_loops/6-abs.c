@@ -10,7 +10,7 @@
 
 int _abs(int n)
 {
-	int absolute;
+	int absolute = n;
 
 	if (n == 0)
 	{
