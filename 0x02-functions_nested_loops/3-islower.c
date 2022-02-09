@@ -3,6 +3,8 @@
 /**
  * _islower - Checks if
  *
+ * @c: ASCII received
+ *
  * Description: Prints the alphabet in lowercase by a new line 10  * times.
  *
  * Return: void
