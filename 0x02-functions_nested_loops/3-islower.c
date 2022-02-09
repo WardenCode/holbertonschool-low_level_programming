@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * _islower - Checks if
+ * _islower - Checks if the param is lowercase
  *
  * @c: ASCII received
  *
- * Description: Prints the alphabet in lowercase by a new line 10  * times.
+ * Description: Checks if the param is lowercase.
  *
- * Return: void
+ * Return: 1 if is lowercase or 0 is not
  */
 
 int _islower(int c)
