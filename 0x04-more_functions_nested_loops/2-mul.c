@@ -7,7 +7,7 @@
  *
  * @b: number
  *
- * Return: 1 if c is a digit, otherwise return 0.
+ * Return: The product of the multiply of 2 numbers.
  */
 
 int mul(int a, int b)
