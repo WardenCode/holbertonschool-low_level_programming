@@ -10,9 +10,10 @@ int main(void)
 {
 	int i;
 
+	printf("1");
+
 	for (i = 2; i <= 100; i++)
 	{
-		printf("1");
 		if (i % 5 == 0 && i % 3 == 0)
 		{
 			printf(" FizzBuzz");
@@ -30,7 +31,6 @@ int main(void)
 			printf(" %d", i);
 		}
 	}
-
 	printf("\n");
 	return (0);
 }
