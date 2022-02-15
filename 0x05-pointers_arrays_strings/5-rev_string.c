@@ -25,7 +25,7 @@ void rev_string(char *s)
 
 	if (size % 2 != 0)
 	{
-		while (second_pointer + 1 != s)
+		while (second_pointer < s)
 		{
 			tmp = *second_pointer;
 			*second_pointer = *s;
