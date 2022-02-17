@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strcat - concatenates two string
+ * _strncopy - Copy a string to another
  *
  * @dest: string-base.
  *
