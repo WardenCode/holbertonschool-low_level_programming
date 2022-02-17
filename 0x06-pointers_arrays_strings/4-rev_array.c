@@ -18,11 +18,12 @@ void reverse_array(int *a, int n)
 	size = n;
 	n--;
 
-	do {
+	while (i < size / 2)
+	{
 		tmp = a[i];
 		a[i] = a[n];
 		a[n] = tmp;
 		i++;
 		n--;
-	} while (i < size / 2);
+	}
 }
