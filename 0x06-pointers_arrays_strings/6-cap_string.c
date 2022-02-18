@@ -5,7 +5,7 @@
  *
  * @text: Pointer to string
  *
- * Return: The string in uppercase
+ * Return: The string in Capitalize
  */
 
 char *cap_string(char *text)
