@@ -12,10 +12,15 @@
 
 char *_strchr(char *s, char c)
 {
-	unsigned int i;
+	unsigned int i, j;
 	char *result = NULL;
 
-	while (s[i])
+	while (s[j])
+	{
+		j++;
+	}
+
+	while (i <= j)
 	{
 		if (s[i] == c)
 		{
