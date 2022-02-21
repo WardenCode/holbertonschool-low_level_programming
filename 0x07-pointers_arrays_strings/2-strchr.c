@@ -12,13 +12,16 @@
 
 char *_strchr(char *s, char c)
 {
-	unsigned int i, j;
+	unsigned int i;
+	unsigned int j = 0;
 	char *result = NULL;
 
 	while (s[j])
 	{
 		j++;
 	}
+
+	j++;
 
 	while (i <= j)
 	{
