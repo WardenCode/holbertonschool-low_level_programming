@@ -7,7 +7,7 @@
  *
  * @c: character to match.
  *
- * Return: A pointer to &s[i] if c is exists in s or NULL;
+ * Return: A pointer to s[i] if c is exists in s or NULL;
  */
 
 char *_strchr(char *s, char c)
