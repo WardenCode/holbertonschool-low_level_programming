@@ -1,18 +1,25 @@
 #include "main.h"
 
 /**
- * _strncat - concatenates two string
+ * _memcpy - Copies memory area.
  *
- * @s: Pointer to the space of memory.
+ * @dest: Destiny memory area.
  *
- * @b: Constant byte.
+ * @src: Memory area source.
  *
- * @n: Bytes of the memory area.
+ * @n: Bytes of the memory area to copy.
  *
- * Return: Pointer to the memory area s.
+ * Return: Returns a pointer to dest
  */
 
-char *_strncat(char *dest, char *src, int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	return ();
+	unsigned int i;
+
+	for (i = 0; i < n; i++)
+	{
+		dest[i] = src[i];
+	}
+
+	return (dest);
 }
