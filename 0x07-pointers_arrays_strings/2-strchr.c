@@ -12,7 +12,7 @@
 
 char *_strchr(char *s, char c)
 {
-	unsigned int i;
+	unsigned int i = 0;
 	unsigned int j = 0;
 	char *result = NULL;
 
@@ -28,10 +28,10 @@ char *_strchr(char *s, char c)
 		if (s[i] == c)
 		{
 			result = &s[i];
-			break;
+			return (result);
 		}
 		i++;
 	}
 
-	return (result);
+	return ('\0');
 }
