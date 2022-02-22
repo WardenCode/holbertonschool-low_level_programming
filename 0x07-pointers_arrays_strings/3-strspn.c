@@ -13,19 +13,13 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int counter = 0, i, j = 0, size_of_sub = 0, flag;
-
-	while (accept[j])
-	{
-		size_of_sub++;
-		j++;
-	}
+	unsigned int counter = 0, i, j, flag;
 
 	for (i = 0; s[i]; i++)
 	{
+		flag = 0;
 		for (j = 0; accept[j]; j++)
 		{
-			flag = 0;
 			if (s[i] == accept[j])
 			{
 				flag = 1;
@@ -34,11 +28,7 @@ unsigned int _strspn(char *s, char *accept)
 			}
 		}
 		if (flag == 0)
-		{
-			break;
-		}
+			return (counter);
 	}
-	if (counter >= size_of_sub)
-		return (counter);
-	return (0);
+	return (counter);
 }
