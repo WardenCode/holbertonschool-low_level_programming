@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _print_chessboard - Prints the chessboard.
+ * print_chessboard - Prints the chessboard.
  *
  * @a: Matrix.
  *
