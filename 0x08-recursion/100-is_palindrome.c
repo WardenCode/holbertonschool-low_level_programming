@@ -11,7 +11,7 @@
 char *move_to_end (char *s)
 {
 	if (*s == '\0')
-		return(s - 1);
+		return (s - 1);
 
 	return (move_to_end(s + 1));
 }
@@ -29,7 +29,7 @@ char *move_to_end (char *s)
 int check_palindrome(char *start, char *end)
 {
 	if (start == end || start > end)
-		return(1);
+		return (1);
 
 	if (*start == *end)
 	{
@@ -37,7 +37,7 @@ int check_palindrome(char *start, char *end)
 	}
 	else
 	{
-		return(0);
+		return (0);
 	}
 }
 
