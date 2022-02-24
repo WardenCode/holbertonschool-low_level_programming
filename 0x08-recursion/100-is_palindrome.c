@@ -8,7 +8,7 @@
  * Return: New pointer to the end of a string.
  */
 
-char *move_to_end (char *s)
+char *move_to_end(char *s)
 {
 	if (*s == '\0')
 		return (s - 1);
