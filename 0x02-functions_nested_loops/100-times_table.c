@@ -1,5 +1,23 @@
 #include "main.h"
-#include <stdio.h>
+
+
+/**
+ * evaluate_zero - Evaluate the 0 case.
+ *
+ * @n: value of n (0)
+ *
+ * Return: void
+ */
+
+
+void evaluate_zero(int n)
+{
+	if (n == 0)
+	{
+		_putchar('0');
+		_putchar('\n');
+	}
+}
 
 /**
  * print_times_table - prints the n times table, starting with 0.
@@ -21,7 +39,10 @@ void print_times_table(int n)
 			{
 				result = i * j;
 				if (j == 0)
+				{
 					_putchar('0');
+					continue;
+				}
 				_putchar(',');
 				_putchar(' ');
 				if (result >= 100)
@@ -45,10 +66,5 @@ void print_times_table(int n)
 			}
 			_putchar('\n');
 		}
-	}
-	if (n == 0)
-	{
-		_putchar('0');
-		_putchar('\n');
 	}
 }
