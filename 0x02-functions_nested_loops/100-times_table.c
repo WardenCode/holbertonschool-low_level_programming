@@ -9,7 +9,6 @@
  * Return: void
  */
 
-
 void evaluate_zero(int n)
 {
 	if (n == 0)
@@ -67,4 +66,5 @@ void print_times_table(int n)
 			_putchar('\n');
 		}
 	}
+	evaluate_zero(n);
 }
