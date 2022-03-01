@@ -15,9 +15,6 @@ char *str_concat(char *s1, char *s2)
 	char *final_str;
 	int size1 = 0, size2 = 0, total_size, i;
 
-	if (!s1 && !s2)
-		return (NULL);
-
 	if (s1)
 	{
 		while (s1[size1])
