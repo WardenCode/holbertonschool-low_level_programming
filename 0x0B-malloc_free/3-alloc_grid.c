@@ -15,21 +15,21 @@ int **alloc_grid(int width, int height)
 {
 	int **grid;
 	/*
-	  i = quantity of pointers
-	  j = thougth rows
-	  k = complete the matrix
+	 * i = quantity of pointers
+	 * j = thougth rows
+	 * k = complete the matrix
 	*/
 	int i, j, k;
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
 
-	grid = malloc(height * sizeof(void*));
+	grid = malloc(height * sizeof(void *));
 	/* If malloc fails */
 	if (!grid)
 		return (NULL);
 
-	for (i = 0; i < height;i++)
+	for (i = 0; i < height; i++)
 	{
 		grid[i] = malloc(width * sizeof(int));
 		/* If malloc fails */
