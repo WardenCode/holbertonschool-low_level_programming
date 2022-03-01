@@ -15,19 +15,25 @@ char *str_concat(char *s1, char *s2)
 	char *final_str;
 	int size1 = 0, size2 = 0, total_size, i;
 
-	if (s1 == NULL && s2 == NULL)
+	if (!s1 && !s2)
 		return (NULL);
 
-	while (s1[size1])
-		size1++;
+	if (s1)
+	{
+		while (s1[size1])
+			size1++;
+	}
 
-	while (s2[size2])
-		size2++;
+	if (s2)
+	{
+		while (s2[size2])
+			size2++;
+	}
 
 	total_size = size1 + size2 + 1;
 	final_str = malloc(total_size * sizeof(char));
 
-	if (final_str == NULL)
+	if (!final_str)
 		return (NULL);
 
 	for (i = 0; i < total_size; i++)
