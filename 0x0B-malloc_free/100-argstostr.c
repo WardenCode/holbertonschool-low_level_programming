@@ -109,6 +109,7 @@ char *argstostr(int ac, char **av)
 			count++;
 		}
 	}
+	free(name_of_program);
 	final_string[count + k] = '\0';
 	return (final_string);
 }
