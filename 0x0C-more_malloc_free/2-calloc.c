@@ -13,22 +13,21 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	unsigned int i, final_size = nmemb * size;
-	char *array_zeros = NULL;
-	/* void *final_pointer = NULL; */
+	char *final_array = NULL;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	array_zeros = malloc(final_size);
+	final_array = malloc(final_size);
 
-	if (!array_zeros)
+	if (!final_array)
 	{
-		free(array_zeros);
+		free(final_array);
 		return (NULL);
 	}
 
 	for (i = 0; i < final_size; i++)
-		array_zeros[i] = 0;
+		final_array[i] = 0;
 
-	return (/* final_pointer =  */array_zeros);
+	return (final_array);
 }
