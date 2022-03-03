@@ -33,10 +33,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i, size_of_s1 = 0, size_of_s2 = 0, size_of_final_string;
 	int holder = n;
-	char *final_string;
-
-	if (holder < 0)
-		exit(1);
+	char *final_string = NULL;
 
 	if (s1)
 		size_of_s1 = count_string(s1);
@@ -47,7 +44,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n >= size_of_s2)
 		n = size_of_s2;
 
-	size_of_final_string = size_of_s1 + n + 1;
+	if (holder >= 0)
+		size_of_final_string = size_of_s1 + n + 1;
+	else
+		size_of_final_string = size_of_s1 + 1;
+
 
 	if (s1 && s2)
 		final_string = malloc(size_of_final_string * sizeof(char));
