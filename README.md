@@ -14,3 +14,5 @@ Repository about my first tests and tiny projects on C.
 8. 0x08. C - Recursion
 9. 0x09. C - Static libraries
 10. 0x0A. C - argc, argv
+11. 0x0B. C - malloc, free
+12. 0x0C. C - More malloc, free
