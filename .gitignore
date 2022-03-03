@@ -1,8 +1,16 @@
 _putchar.c
 *-main.c
+*.o
 [0-9]
+[0-9][0-9][0-9]
+comp_*
 a.out
 test.c
+test_*
+test
 console.py
+page.html
 .gdb_history
 debug
+.vscode
+0x09-static_libraries/[0-9]-*.c
