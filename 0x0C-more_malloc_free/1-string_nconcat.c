@@ -54,7 +54,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		final_string = malloc(1);
 
 	if (!final_string)
+	{
+		free(final_string);
 		return (NULL);
+	}
 
 	for (i = 0; i < (size_of_final_string - 1); i++)
 	{
