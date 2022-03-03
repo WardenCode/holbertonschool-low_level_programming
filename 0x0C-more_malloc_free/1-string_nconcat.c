@@ -31,13 +31,12 @@ unsigned int count_string(char *string)
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i, size_of_s1 = 0, size_of_s2 = 0, size_of_final_string;
+	unsigned int i, size_of_s1 = 0, size_of_s2 = 0, size_of_final_string = 0;
 	int holder = n;
 	char *final_string = NULL;
 
 	if (s1)
 		size_of_s1 = count_string(s1);
-
 	if (s2)
 		size_of_s2 = count_string(s2);
 
@@ -49,17 +48,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	else
 		size_of_final_string = size_of_s1 + 1;
 
-
-	if (s1 && s2)
-		final_string = malloc(size_of_final_string * sizeof(char));
-	else
-		final_string = malloc(0);
-
-	if (!final_string)
-	{
-		free(final_string);
-		return (NULL);
-	}
+	if (s1 || s2)
+		final_string = malloc(size_of_s1 + n + 1 * sizeof(char));
+	else if (!s1 && !s2)
+		final_string = malloc(1);
 
 	for (i = 0; i < (size_of_final_string - 1); i++)
 	{
@@ -69,6 +61,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			final_string[i] = s2[i - size_of_s1];
 	}
 	final_string[i] = '\0';
-
 	return (final_string);
 }
