@@ -3,9 +3,9 @@
 /**
  * array_range - Creates an array of integers.
  *
- * @min: 
+ * @min: min number to add in the array
  *
- * @max: 
+ * @max: max number to add in the array
  *
  * Return: The pointer to the newly created array
  */
