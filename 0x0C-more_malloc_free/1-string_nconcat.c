@@ -32,7 +32,11 @@ unsigned int count_string(char *string)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i, size_of_s1 = 0, size_of_s2 = 0, size_of_final_string;
+	int holder = n;
 	char *final_string;
+
+	if (holder < 0)
+		return (NULL);
 
 	if (s1)
 		size_of_s1 = count_string(s1);
@@ -56,7 +60,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 	}
 
-	for (i = 0; i < size_of_final_string - 1; i++)
+	for (i = 0; i < (size_of_final_string - 1); i++)
 	{
 		if (i < size_of_s1)
 			final_string[i] = s1[i];
