@@ -26,14 +26,14 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		return (resize_ptr);
 	}
 
-	if (new_size == old_size || old_size > new_size)
-		return (ptr);
-
 	if (new_size == 0 && original_ptr != NULL)
 	{
 		free(ptr);
 		return (NULL);
 	}
+
+	if (new_size == old_size || old_size > new_size)
+		return (ptr);
 
 	if (new_size > old_size)
 	{
