@@ -1,6 +1,8 @@
 _putchar.c
 *-main.c
 *.o
+*main*
+*.html
 [0-9]
 [0-9][0-9][0-9]
 comp_*
