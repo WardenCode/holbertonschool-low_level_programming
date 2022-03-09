@@ -22,4 +22,4 @@ Exist two types of tasks in this project:
 
 ### Advanced
 
-- 100-main_opcodes.c &rarr; Prints the opcodes of its own main function. 
+- 100-main_opcodes.c &rarr; Prints the opcodes of its own main function.
