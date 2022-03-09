@@ -1,5 +1,4 @@
 #include "pointers.h"
-
 /**
  * print_name - Prints a name
  *
