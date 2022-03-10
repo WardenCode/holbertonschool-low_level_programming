@@ -2,7 +2,7 @@
 #define POINTERS_H
 
 #include <stdio.h>
-
+#include <string.h>
 typedef unsigned long size_t;
 
 void print_name(char *name, void (*f)(char *));
