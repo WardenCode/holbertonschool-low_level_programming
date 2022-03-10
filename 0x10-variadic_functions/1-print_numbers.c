@@ -1,6 +1,6 @@
 #include "variadic_functions.h"
 /**
- * print_number - Print all the numbers passed like arguments
+ * print_numbers - Print all the numbers passed like arguments
  *
  * @separator: String to separate numbers
  *
