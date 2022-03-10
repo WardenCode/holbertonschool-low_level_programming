@@ -14,7 +14,7 @@ void print_all(const char * const format, ...)
 	unsigned int i = 0;
 	char *tmp, *separator = "";
 
-	if (!format)
+	if (format)
 	{
 		va_start(argument, format);
 		while (format[i])
