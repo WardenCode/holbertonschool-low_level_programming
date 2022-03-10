@@ -46,7 +46,7 @@ void print_all(const char * const format, ...)
 			separator = ", ";
 			i++;
 		}
-		va_end(argument);
 	}
 	putchar(10);
+	va_end(argument);
 }
