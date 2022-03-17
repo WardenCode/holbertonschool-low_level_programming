@@ -20,40 +20,6 @@ unsigned int _strlen(const char *s)
 }
 
 /**
- * _strdup - Creates a pointer with a copy of the str param
- *
- * @str: String to copy
- *
- * Return: A pointer to the duplicated string or
- * null if the memory is insufficient or if the str is NULL
- */
-
-char *_strdup(const char *str)
-{
-	char *duplicated_str;
-	int size = 0, i = 0;
-
-	if (str == NULL)
-		return (NULL);
-
-	while (str[size])
-		size++;
-
-	duplicated_str = malloc((size + 1) * sizeof(char));
-
-	if (duplicated_str == NULL)
-		return (NULL);
-
-	while (i < size)
-	{
-		duplicated_str[i] = str[i];
-		i++;
-	}
-
-	return (duplicated_str);
-}
-
-/**
  * add_node - Adds a new node at the beginning of a list_t list.
  *
  * @head: Double pointer to the head of a linked list
@@ -81,7 +47,7 @@ list_t *add_node(list_t **head, const char *str)
 			return (NULL);
 	}
 
-	new_node->str = _strdup(str);
+	new_node->str = strdup(str);
 
 	if (*head == NULL)
 		new_node->next = NULL;
@@ -90,5 +56,5 @@ list_t *add_node(list_t **head, const char *str)
 
 	*head = new_node;
 
-	return(new_node);
+	return (*head);
 }
