@@ -14,16 +14,15 @@ size_t print_list(const list_t *h)
 
 	/*Validate if the pointer to the linked list is Null*/
 	if (h == NULL)
-		return(0);
-
+		return (0);
 
 	/*While h != NULL continue the loop*/
 	while (h != NULL)
 	{
 		/*
-		  If the str == NULL print a default msg
-		  Otherwise print the len of the str and the str
-		*/
+		 * If the str == NULL print a default msg
+		 * Otherwise print the len of the str and the str
+		 */
 		if (h->str == NULL)
 			printf("[0] (nil)\n");
 		else
