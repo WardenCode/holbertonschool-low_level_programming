@@ -50,6 +50,8 @@ char *_strdup(const char *str)
 		i++;
 	}
 
+	duplicated_str[i] = '\0';
+
 	return (duplicated_str);
 }
 
