@@ -39,6 +39,9 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		holder = holder->next;
 	}
 
+	if (!holder && !to_delete)
+		return (-1);
+
 	free(to_delete);
 
 	prev->next = holder;
