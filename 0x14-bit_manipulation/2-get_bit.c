@@ -12,14 +12,8 @@
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-	int result = n;
-	int holder = index;
-
-	if (holder < 0 && index <= 2147483647)
+	if (index > (sizeof(n) * 8))
 		return (-1);
 
-	if (index != 0)
-		result = n >> index;
-
-	return (result & 1);
+	return ((n >> index) & 1);
 }
