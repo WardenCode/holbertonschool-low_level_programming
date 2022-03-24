@@ -14,11 +14,7 @@
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned int quantity_to_flip = 0;
-	unsigned int new_number = 0;
-
-	if (n == m)
-		return (0);
+	unsigned long int quantity_to_flip = 0, new_number = 0;
 
 	new_number = n ^ m;
 
