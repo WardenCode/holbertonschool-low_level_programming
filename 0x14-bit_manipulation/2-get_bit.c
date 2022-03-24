@@ -15,7 +15,7 @@ int get_bit(unsigned long int n, unsigned int index)
 	int result = n;
 	int holder = index;
 
-	if (holder < 0)
+	if (holder < 0 && index <= 2147483647)
 		return (-1);
 
 	if (index != 0)
