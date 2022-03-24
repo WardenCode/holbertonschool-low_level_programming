@@ -3,6 +3,7 @@
 
 #include <unistd.h>
 #include <stdlib.h>
+#include <stdint.h>
 
 int _putchar(char c);
 unsigned int binary_to_uint(const char *b);
