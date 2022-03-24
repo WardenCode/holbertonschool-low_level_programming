@@ -21,8 +21,6 @@ int clear_bit(unsigned long int *n, unsigned int index)
 	for (i = 0; i < index; i++)
 		position *= 2;
 
-	/* position -= *n; */
-	*n -= position;
-	/* *n = *n & position; */
+	*n &= ~position;
 	return (1);
 }
