@@ -89,13 +89,10 @@ char **strtow(char *str)
 			}
 			flag = 1;
 		}
-
 		result[j][tmp] = str[i];
 		tmp++;
-
 		if (str[i + 1] == 32 || !str[i + 1])
 			result[j][tmp] = '\0';
 	}
-	result[j + 1] = NULL;
 	return (result);
 }
