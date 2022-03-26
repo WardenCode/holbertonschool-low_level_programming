@@ -2,6 +2,27 @@
 #include <stdlib.h>
 
 /**
+ * only_spaces - Discover if only exists spaces in a string.
+ *
+ * @str: String to search the spaces.
+ *
+ * Return: 1 if exist other char, 0 if not.
+ */
+
+unsigned int only_spaces(char *str)
+{
+	unsigned int flag = 0, i = 0;
+
+	while (str[i] == 32 || !str[i])
+		i++;
+
+	if (!str[i])
+		flag = 1;
+
+	return (flag);
+}
+
+/**
  * count_to_the_next_space - Count the characters ultil the next space.
  *
  * @str: String to search the space.
@@ -60,14 +81,14 @@ char **strtow(char *str)
 	int i = 0, j = 0, flag = 0, len = 0, tmp = 0;
 	unsigned int quantity_of_words = 0;
 
-	if (str == NULL || *str == '\0')
+	if (str == NULL || *str == '\0' || !only_spaces(str))
 		return (NULL);
 
 	quantity_of_words = number_of_words(str);
+
 	result = malloc(quantity_of_words * sizeof(void *));
 	if (!result)
 		return (NULL);
-
 	for (; str[i]; i++)
 	{
 		if (str[i] == 32)
@@ -91,6 +112,7 @@ char **strtow(char *str)
 		}
 		result[j][tmp] = str[i];
 		tmp++;
+
 		if (str[i + 1] == 32 || !str[i + 1])
 			result[j][tmp] = '\0';
 	}
