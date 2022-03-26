@@ -39,7 +39,7 @@ unsigned int count_to_the_next_space(char *str, unsigned int index)
 	while (str[i] != 32 || !str[i])
 		i++, counter++;
 
-	return (counter + 1);
+	return (counter);
 }
 
 /**
