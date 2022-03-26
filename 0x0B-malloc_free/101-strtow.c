@@ -11,13 +11,13 @@
 
 unsigned int only_spaces(char *str)
 {
-	unsigned int flag = 0, i = 0;
+	unsigned int flag = 1, i = 0;
 
-	while (str[i] == 32 || !str[i])
+	while (str[i] == 32)
 		i++;
 
 	if (!str[i])
-		flag = 1;
+		flag = 0;
 
 	return (flag);
 }
@@ -81,7 +81,7 @@ char **strtow(char *str)
 	int i = 0, j = 0, flag = 0, len = 0, tmp = 0;
 	unsigned int quantity_of_words = 0;
 
-	if (str == NULL || *str == '\0' || only_spaces(str))
+	if (str == NULL || *str == '\0' || !only_spaces(str))
 		return (NULL);
 
 	quantity_of_words = number_of_words(str);
