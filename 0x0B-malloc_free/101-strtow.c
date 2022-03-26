@@ -36,10 +36,14 @@ unsigned int count_to_the_next_space(char *str, unsigned int index)
 {
 	unsigned int counter = 0, i = index;
 
-	while (str[i] != 32 || !str[i])
+	while (str[i] != 32 /* || !str[i] */)
+	{
+		if (!str[i])
+			break;
 		i++, counter++;
+	}
 
-	return (counter);
+	return (counter + 1);
 }
 
 /**
