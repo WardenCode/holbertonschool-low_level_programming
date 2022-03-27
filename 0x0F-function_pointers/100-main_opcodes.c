@@ -18,12 +18,18 @@ int main(int argc, char *argv[])
 	char *f = NULL;
 
 	if (argc != 2)
-		printf("Error\n"), exit(1);
+	{
+		printf("Error\n");
+		exit(1);
+	}
 
 	number_bytes = atoi(argv[1]);
 
 	if (number_bytes < 0)
-		printf("Error\n"), exit(2);
+	{
+		printf("Error\n");
+		exit(2);
+	}
 
 	f = (char *)main;
 
