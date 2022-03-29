@@ -10,7 +10,7 @@
  * Return: 0 if success, exit if fails.
  */
 
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int fd_from = 0, fd_to = 0, read_size = 0, from_close = 0, to_close = 0;
 	char buf[1024];
@@ -36,16 +36,13 @@ int main (int argc, char *argv[])
 			exit(99);
 		}
 	}
-
 	if (read_size < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-
 	from_close = close(fd_from);
 	to_close = close(fd_to);
-
 	if (from_close < 0 || to_close < 0)
 	{
 		if (from_close < 0)
@@ -54,6 +51,5 @@ int main (int argc, char *argv[])
 			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_to);
 		exit(100);
 	}
-
 	return (EXIT_SUCCESS);
 }
