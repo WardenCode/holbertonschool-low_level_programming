@@ -13,7 +13,7 @@
 int main(int argc, char *argv[])
 {
 	int fd_from = 0, fd_to = 0, read_size = 0, from_close = 0, to_close = 0;
-	char buf[1024];
+	char buf[BUFSIZ];
 
 	if (argc != 3)
 	{
@@ -51,5 +51,5 @@ int main(int argc, char *argv[])
 			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_to);
 		exit(100);
 	}
-	return (EXIT_SUCCESS);
+	return (0);
 }
