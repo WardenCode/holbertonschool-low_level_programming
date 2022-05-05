@@ -13,7 +13,7 @@ size_t print_dlistint(const dlistint_t *h)
 	if (h)
 	{
 		printf("%d\n", h->n);
-		return(1 + print_dlistint(h->next));
+		return (1 + print_dlistint(h->next));
 	}
 
 	return (0);
